@@ -28,7 +28,7 @@ ssize_t read_all(int sockfd, void *buf, size_t len) {
             if (errno == EINTR) continue;
             return -1;
         }
-        if (n == 0) return (ssize_t)total; /* EOF reached */
+        if (n == 0) return (ssize_t)total; 
         total += n;
     }
     return (ssize_t)total;
@@ -45,8 +45,8 @@ int read_line(int sockfd, char *buf, size_t max_len) {
             return -1;
         }
         if (n == 0) {
-            if (idx == 0) return -1; /* EOF without any data */
-            break; /* EOF with partial line */
+            if (idx == 0) return -1; 
+            break; 
         }
         if (c == '\n') {
             break;
