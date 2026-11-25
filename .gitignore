@@ -1,0 +1,7 @@
+jobs.log
+out/
+server
+worker
+client
+*.o
+*.log
