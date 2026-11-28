@@ -1,6 +1,6 @@
 jobs.log
 out/
-/server
+server
 worker
 client
 *.o
