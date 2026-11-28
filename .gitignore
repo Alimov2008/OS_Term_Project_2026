@@ -2,7 +2,7 @@ jobs.log
 out/
 server
 worker
-client
+/client
 *.o
 *.log
 .vscode/
